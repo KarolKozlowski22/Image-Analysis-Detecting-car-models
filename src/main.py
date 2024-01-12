@@ -5,7 +5,6 @@ from categorize import categorize
 import os
 from PyQt5.QtWidgets import QGraphicsScene
 
-# our class
 class MainWindow(Ui_MainWindow):
     def __init__(self):
         super(MainWindow).__init__()
