@@ -32,9 +32,6 @@ class Ui_MainWindow(object):
         self.layout_ModelTraining = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.layout_ModelTraining.setContentsMargins(0, 0, 0, 0)
         self.layout_ModelTraining.setObjectName("layout_ModelTraining")
-        self.button_TrainModel = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        self.button_TrainModel.setObjectName("button_TrainModel")
-        self.layout_ModelTraining.addWidget(self.button_TrainModel)
         self.label_TrainModel = QtWidgets.QLabel(self.horizontalLayoutWidget)
         self.label_TrainModel.setObjectName("label_TrainModel")
         self.layout_ModelTraining.addWidget(self.label_TrainModel)
@@ -67,9 +64,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Image-Analysis-Detecting-car-models"))
-        self.button_TrainModel.setText(_translate("MainWindow", "Train Model"))
-        self.label_TrainModel.setText(_translate("MainWindow", "none"))
-        self.label_RecognOutput.setText(_translate("MainWindow", "TextLabel"))
+        self.label_TrainModel.setText(_translate("MainWindow", ""))
+        self.label_RecognOutput.setText(_translate("MainWindow", ""))
         self.button_LoadImage.setText(_translate("MainWindow", "Load Image"))
         self.button_Recogn.setText(_translate("MainWindow", "Categorize Image"))
 
