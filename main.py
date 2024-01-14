@@ -12,7 +12,7 @@ class MainWindow(Ui_MainWindow):
         super(MainWindow, self).setupUi(Dialog)
         if(os.path.exists('model3.h5')):
             self.label_TrainModel.setStyleSheet("color: green")
-            self.label_TrainModel.setText("Model trained - accuracy: 84%")
+            self.label_TrainModel.setText("Model trained - accuracy: 80.32%")
         else:
             self.label_TrainModel.setStyleSheet("color: red")
             self.label_TrainModel.setText("Model not trained")

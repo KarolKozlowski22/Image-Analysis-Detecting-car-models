@@ -1,6 +1,7 @@
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping
 import matplotlib.pyplot as plt
+import os
 from tensorflow.keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 from data_for_model import prepare_data_for_model
@@ -8,7 +9,7 @@ from data_augmentation import create_augmented_images
 from create_model import create_model
 from cost_function import plot_cost_function
 
-base_dir='/home/bkonopka/pliki/is_semestr_5/Image-Analysis-Detecting-car-models/src'
+base_dir=os.getcwd()
 directories = ['mercedes', 'skoda', 'volkswagen']
 create_augmented_images(base_dir, directories)
 image_array, init_labels = prepare_data_for_model(base_dir, directories)
