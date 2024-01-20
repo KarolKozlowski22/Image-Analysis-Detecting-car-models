@@ -1,4 +1,3 @@
-*.h5
 __pycache__
 mercedes
 skoda
@@ -7,4 +6,3 @@ lexus
 mazda
 inne
 model1*
-*.png

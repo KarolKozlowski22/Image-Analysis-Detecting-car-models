@@ -2,7 +2,7 @@ import tensorflow as tf
 from PIL import Image
 
 def categorize(image_path):
-    model = tf.keras.models.load_model('model1.keras')
+    model = tf.keras.models.load_model('model1.h5')
     image = Image.open(image_path)
     resized_image = image.resize((128, 128))
     resized_image = resized_image .convert('L')

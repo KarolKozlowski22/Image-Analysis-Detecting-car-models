@@ -11,7 +11,7 @@ import numpy as np
 
 base_dir=os.getcwd()
 directories = ['skoda', 'mercedes', 'volkswagen', 'lexus', 'inne']
-# create_augmented_images(base_dir, directories)
+create_augmented_images(base_dir, directories)
 
 image_array, init_labels = prepare_data_for_model(base_dir, directories)
 model=create_model()
@@ -28,7 +28,7 @@ for folder in directories:
         num_of_img_in_each_folder.append(len(os.listdir(folder_path)))
 print(num_of_img_in_each_folder)
 history = model.fit(X_train, y_train, epochs=15, batch_size=64, validation_data=(X_val, y_val), callbacks=[early_stopping])
-model.save('model1.keras')
+model.save('model1.h5')
 plot_cost_function(history)
 
 

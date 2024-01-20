@@ -10,9 +10,9 @@ class MainWindow(Ui_MainWindow):
 
     def setupUi(self, Dialog):
         super(MainWindow, self).setupUi(Dialog)
-        if(os.path.exists('model1.keras')):
+        if(os.path.exists('model1.h5')):
             self.label_TrainModel.setStyleSheet("color: green")
-            self.label_TrainModel.setText("Model trained - accuracy: 84%")
+            self.label_TrainModel.setText("Model trained - accuracy: 75,19%")
         else:
             self.label_TrainModel.setStyleSheet("color: red")
             self.label_TrainModel.setText("Model not trained")
