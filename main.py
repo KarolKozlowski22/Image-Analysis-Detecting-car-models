@@ -10,7 +10,7 @@ class MainWindow(Ui_MainWindow):
 
     def setupUi(self, Dialog):
         super(MainWindow, self).setupUi(Dialog)
-        if(os.path.exists('model3.h5')):
+        if(os.path.exists('model1.keras')):
             self.label_TrainModel.setStyleSheet("color: green")
             self.label_TrainModel.setText("Model trained - accuracy: 84%")
         else:
@@ -35,7 +35,7 @@ class MainWindow(Ui_MainWindow):
         if 'image' not in self.__dict__:
             self.label_RecognOutput.setStyleSheet("color: red")
             self.label_RecognOutput.setText("No image loaded")
-        elif not os.path.exists('model3.h5'):
+        elif not os.path.exists('model1.keras'):
             self.label_RecognOutput.setStyleSheet("color: red")
             self.label_RecognOutput.setText("Model not trained")
         else:

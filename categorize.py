@@ -2,7 +2,7 @@ import tensorflow as tf
 from PIL import Image
 
 def categorize(image_path):
-    model = tf.keras.models.load_model('model3.h5')
+    model = tf.keras.models.load_model('model1.keras')
     image = Image.open(image_path)
     resized_image = image.resize((128, 128))
     resized_image = resized_image .convert('L')
@@ -17,7 +17,10 @@ def categorize(image_path):
         return "Skoda"
     elif category_index == 2:
         return "Mercedes"
-    else:
+    elif category_index == 3:
+        return "Lexus"
+    elif category_index == 4:
         return "None"
+  
 
 
