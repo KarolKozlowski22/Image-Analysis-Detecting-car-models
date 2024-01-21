@@ -32,9 +32,3 @@ COPY . .
 ENV QT_QPA_PLATFORM=xcb
 
 CMD ["python", "main.py"]
-
-# 192.168.0.163
-
-#cd C:\Program Files (x86)\Xming
-
-#172.20.80.1
