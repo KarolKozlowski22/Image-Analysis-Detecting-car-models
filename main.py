@@ -35,7 +35,7 @@ class MainWindow(Ui_MainWindow):
         if 'image' not in self.__dict__:
             self.label_RecognOutput.setStyleSheet("color: red")
             self.label_RecognOutput.setText("No image loaded")
-        elif not os.path.exists('model1.keras'):
+        elif not os.path.exists('model1.h5'):
             self.label_RecognOutput.setStyleSheet("color: red")
             self.label_RecognOutput.setText("Model not trained")
         else:
