@@ -9,7 +9,7 @@ The program, written in Python, is designed to allow the user to load a car logo
 Link to dataset and model: https://drive.google.com/drive/folders/1ENMmsX_74hF0vcwBLtJv53shgnVJ9E_L?usp=sharing
 
 ## Contributors
-Figurska Marta, Makieła Gosia, Konopka Bartosz, Kozłowski Karol
+Figurska Marta, Makieła Małgorzata, Konopka Bartosz, Kozłowski Karol
 
 
 ### Additional Information: Dockerization of the Application
